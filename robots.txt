@@ -1,0 +1,3 @@
+# Permitir que todos los bots accedan a todo
+User-agent: *
+Allow: /

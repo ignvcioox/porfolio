@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 dark:bg-zinc-900;
+  font-family: "Inter", sans-serif;
+}
+
+/* Generate Stars and Meteors */
+
+.star {
+  @apply absolute rounded-full bg-zinc-800 dark:bg-white;
+  box-shadow: 0 0 10px 2px rgba(160, 160, 160, 0.4)
+}
+
+.dark .star {
+  box-shadow: 0 0 10px 2px rgba(171, 171, 171, 0.4);
+}
+
+.meteor {
+  @apply absolute bg-gradient-to-r from-black via-black dark:from-white dark:via-white to-transparent rounded-2xl;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes meteor {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Button Animation */
+  
+.bg-animated-gradient {
+  background: linear-gradient(90deg, #4b2fff, #735bff, #6752ff, #6149ff);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite; ; 
+  box-shadow: 0 4px 15px rgba(116, 94, 255, 0.6);
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Scroll Progress Button */
+
+.scroll-progress-inner {
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+}

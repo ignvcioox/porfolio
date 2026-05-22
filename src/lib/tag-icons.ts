@@ -1,0 +1,33 @@
+import {
+  Angular,
+  ClickUp,
+  Expo,
+  Figma,
+  GitHub,
+  GooglePlay,
+  MaterialUI,
+  MySQL,
+  NestJS,
+  Nextjs,
+  Nodejs,
+  React,
+  TanStack,
+  TypeScript,
+} from '@/src/components/Icons';
+
+export const tagIcons = {
+  'Next.js': Nextjs,
+  ClickUp,
+  TanStack,
+  Angular,
+  'Material UI': MaterialUI,
+  NestJS,
+  TypeScript,
+  MySQL,
+  GitHub: GitHub,
+  Expo,
+  React,
+  'Node.js': Nodejs,
+  Figma,
+  'Play Store': GooglePlay,
+} as const;

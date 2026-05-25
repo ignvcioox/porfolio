@@ -93,8 +93,7 @@ export const Hero = () => {
             <Image
               src='/avatar.webp'
               alt='Benjamin - Software Developer'
-              width={320}
-              height={320}
+              fill
               sizes='(min-width: 1024px) 320px, 0px'
               className='object-cover object-center'
               priority

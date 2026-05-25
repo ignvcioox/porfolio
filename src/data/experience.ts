@@ -14,11 +14,11 @@ export type ExperienceItem = {
 export const experiences: ExperienceItem[] = [
   {
     id: 1,
-    period: 'Enero 2026 - Marzo 2026',
+    period: 'Ene 2026 - Mar 2026',
     duration: '3 meses',
     role: 'Frontend Developer',
     company: 'Primarket',
-    image: '/company/primarket.jpeg',
+    image: '/company/primarket.webp',
     bullets: [
       'Desarrollo interfaces frontend con Next.js y Zustand, priorizando rendimiento, mantenibilidad y buenas prácticas de desarrollo',
       'Implementación de integraciones con APIs RESTful en un ecosistema B2B, optimizando la transferencia de datos y garantizando la consistencia de la información técnica.',
@@ -27,10 +27,10 @@ export const experiences: ExperienceItem[] = [
   },
   {
     id: 2,
-    period: 'Junio 2025 - Noviembre 2025',
+    period: 'Jun 2025 - Nov 2025',
     duration: '6 meses',
     role: 'Full Stack Developer',
-    company: 'Hospital Provincial de Ovalle',
+    company: 'Hospital de Ovalle',
     image: '/company/hospital.webp',
     bullets: [
       'Mantenimiento y mejora de aplicaciones internas desarrolladas con NestJS y Angular, asegurando estabilidad, rendimiento y cumplimiento de los requerimientos funcionales.',
@@ -41,10 +41,10 @@ export const experiences: ExperienceItem[] = [
   },
   {
     id: 3,
-    period: 'Abril 2024 - Junio 2024',
+    period: 'Abr 2024 - Jun 2024',
     duration: '3 meses',
     role: 'Full Stack Developer',
-    company: 'Hospital Provincial de Ovalle',
+    company: 'Hospital de Ovalle',
     image: '/company/hospital.webp',
     bullets: [
       'Desarrollé una aplicación móvil desde cero utilizando tecnologías modernas como React, Expo y TypeScript, aplicando componentes reutilizables, custom hooks y buenas prácticas de arquitectura para mantener un frontend limpio, modular y escalable.',

@@ -1,12 +1,10 @@
 export const About = () => {
   return (
-    <section className='mx-auto flex max-w-5xl items-center px-4'>
+    <section className='mx-auto mb-16 flex max-w-5xl items-center px-4'>
       <div className='grid grid-cols-1 items-start gap-8 md:grid-cols-12 md:gap-12'>
         <div className='flex flex-col justify-center md:col-span-5'>
           <span className='mb-3 text-xs font-bold tracking-widest text-emerald-400 uppercase'>Sobre mí</span>
-          <h1 className='text-4xl leading-tight font-black tracking-tight text-white md:text-4xl'>
-            Software Developer
-          </h1>
+          <h1 className='text-3xl leading-tight font-black tracking-tight text-white'>Software Developer</h1>
           <div className='mt-6 h-1 w-16 rounded-full bg-emerald-500' />
         </div>
 

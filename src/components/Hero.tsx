@@ -31,32 +31,28 @@ export const Hero = () => {
     <section id='home'>
       <ParticlesBackground />
       <div className='relative z-10 mx-auto max-w-6xl px-6 pt-32 pb-20'>
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20'>
+        <div className='flex flex-col items-center justify-between gap-12 lg:flex-row lg:gap-20'>
           <div className='flex-1 text-center lg:text-left'>
-            <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-2'>
+            <h1 className='mb-2 text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl'>
               Hola! Soy <span className='text-foreground'>Benjamin </span>
             </h1>
 
             <Typewriter />
 
-            <p className='text-lg text-foreground leading-relaxed mb-10 mt-4 max-w-lg'>
-              Me enfoco en escribir código limpio y construir interfaces que la
-              gente disfrute usar
+            <p className='text-foreground mt-4 mb-10 max-w-lg text-lg leading-relaxed'>
+              Me enfoco en escribir código limpio y construir interfaces que la gente disfrute usar
             </p>
 
-            <div className='flex flex-col lg:flex-row items-center gap-4'>
+            <div className='flex flex-col items-center gap-4 lg:flex-row'>
               <Button
                 asChild
                 variant='ghost'
                 size='lg'
-                className='group bg-blue-500 text-blue-100 px-4 py-5 hover:bg-blue-500/80 transition-colors duration-300'
+                className='group bg-blue-600 px-4 py-5 text-white transition-colors duration-300 hover:bg-blue-600'
               >
-                <Link
-                  href='/'
-                  onClick={(event) => scrollToSection(event, 'projects')}
-                >
+                <Link href='/' onClick={(event) => scrollToSection(event, 'projects')}>
                   Ver Proyectos
-                  <ArrowRight className='size-4 group-hover:translate-x-1 transition-transform' />
+                  <ArrowRight className='size-4 transition-transform group-hover:translate-x-1' />
                 </Link>
               </Button>
 
@@ -72,11 +68,7 @@ export const Hero = () => {
                     <a
                       href={href}
                       target={href.startsWith('http') ? '_blank' : undefined}
-                      rel={
-                        href.startsWith('http')
-                          ? 'noopener noreferrer'
-                          : undefined
-                      }
+                      rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                       aria-label={label}
                     >
                       <Icon className='size-5' />
@@ -87,11 +79,12 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className='hidden lg:flex relative size-72 lg:size-80 rounded-full overflow-hidden border-4 border-white/5'>
+          <div className='relative hidden size-72 overflow-hidden rounded-full border-4 border-white/5 lg:flex lg:size-80'>
             <Image
-              src='/avatar.png'
+              src='/avatar.webp'
               alt='Benjamin - Software Developer'
               fill
+              sizes='(min-width: 1024px) 320px, 0px'
               className='object-cover object-center'
               priority
             />

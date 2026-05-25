@@ -1,89 +1,85 @@
+'use client';
+
+import { motion, Variants } from 'framer-motion';
 import { Dot } from 'lucide-react';
 import Image from 'next/image';
 
 import { experiences } from '@/src/data/experience';
 import { tagIcons } from '@/src/lib/tag-icons';
 
+const cardEffect: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.5,
+      ease: [0.25, 1, 0.5, 1] as const,
+    },
+  },
+};
+
 export function Experience() {
   return (
-    <section id='experience' className='py-24'>
-      <div className='mx-auto max-w-3xl'>
-        <div className='text-center mb-20'>
-          <p className='text-sm text-emerald-400 tracking-widest uppercase mb-2'>
-            Trayectoria
-          </p>
-          <h2 className='text-3xl sm:text-4xl font-bold'>
-            Experiencia Laboral
-          </h2>
-        </div>
+    <section id='experience' className='mx-auto max-w-5xl px-4 py-8'>
+      <div className='mb-20 text-center'>
+        <p className='text-sm font-semibold tracking-widest text-emerald-400 uppercase'>Trayectoria</p>
+        <h2 className='mt-2 text-2xl font-bold tracking-wide text-white'>Experiencia Laboral</h2>
+      </div>
 
-        <div className='flex flex-col'>
-          {experiences.map((exp, index) => (
-            <div key={exp.id} className='flex gap-8'>
-              <div className='flex flex-col items-center'>
-                <div
-                  className={`w-11 h-11 rounded-xl overflow-hidden shrink-0 shadow-lg border border-white/10 transition-transform duration-300 hover:scale-110`}
-                >
-                  <Image
-                    src={exp.image}
-                    alt={exp.company}
-                    width={64}
-                    height={64}
-                    className='object-cover'
-                  />
-                </div>
-                <div className='w-0.5 flex-1 my-4 bg-linear-to-b from-white/20 to-transparent' />
+      <div className='flex flex-col'>
+        {experiences.map((exp, index) => (
+          <motion.div
+            key={exp.id}
+            variants={cardEffect}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: false, amount: 0.2, margin: '-40px 0px' }}
+            className='flex gap-8'
+          >
+            <div className='flex flex-col items-center'>
+              <div className='h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950 shadow-lg transition-transform duration-300 hover:scale-110'>
+                <Image src={exp.image} alt={exp.company} width={64} height={64} className='object-cover' />
+              </div>
+              <div className='my-4 w-0.5 flex-1 bg-linear-to-b from-white/20 to-transparent' />
+            </div>
+
+            <div className={`flex-1 ${index < experiences.length - 1 ? 'pb-20' : ''}`}>
+              <div className='mb-3 flex flex-wrap items-center gap-2'>
+                <span className='text-sm font-semibold text-emerald-400'>{exp.period}</span>
+                <span className='text-muted-foreground text-sm'>·</span>
+                <span className='text-muted-foreground text-sm'>{exp.duration}</span>
               </div>
 
-              <div
-                className={`flex-1 ${index < experiences.length - 1 ? 'pb-20' : ''}`}
-              >
-                <div className='flex flex-wrap items-center gap-2 mb-3'>
-                  <span className='text-emerald-400 text-sm font-semibold'>
-                    {exp.period}
-                  </span>
-                  <span className='text-muted-foreground text-sm'>·</span>
-                  <span className='text-muted-foreground text-sm'>
-                    {exp.duration}
-                  </span>
-                </div>
+              <h3 className='mb-1 text-xl font-bold text-zinc-100'>{exp.role}</h3>
+              <p className='mb-6 text-sm font-medium tracking-wide text-emerald-400'>{exp.company}</p>
 
-                <h3 className='text-xl font-bold mb-1'>{exp.role}</h3>
-                <p className='text-emerald-400 font-medium text-sm mb-6 tracking-wide'>
-                  {exp.company}
-                </p>
+              <ul className='mb-6 flex flex-col gap-3'>
+                {exp.bullets.map((bullet, idx) => (
+                  <li key={idx} className='text-muted-foreground flex items-start gap-3 text-base'>
+                    <Dot className='mt-1 size-4 shrink-0 text-emerald-400' />
+                    <span className='text-foreground/90'>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
 
-                <ul className='flex flex-col gap-3 mb-6'>
-                  {exp.bullets.map((bullet, index) => (
-                    <li
-                      key={index}
-                      className='flex items-start gap-3 text-base text-muted-foreground'
+              <div className='flex flex-wrap gap-2'>
+                {exp.tags.map((tag) => {
+                  const Icon = tagIcons[tag as keyof typeof tagIcons];
+                  return (
+                    <span
+                      key={tag}
+                      className='flex items-center gap-2 rounded border border-zinc-800/40 bg-zinc-900 p-2 text-xs font-semibold text-zinc-300'
                     >
-                      <Dot className='size-4 shrink-0 text-emerald-400 mt-1' />
-
-                      <span className='text-foreground/90'>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className='flex gap-2 flex-wrap'>
-                  {exp.tags.map((tag) => {
-                    const Icon = tagIcons[tag as keyof typeof tagIcons];
-                    return (
-                      <span
-                        key={tag}
-                        className='bg-zinc-900 p-2 rounded flex items-center gap-2 text-xs font-semibold'
-                      >
-                        <Icon className='size-4' />
-                        {tag}
-                      </span>
-                    );
-                  })}
-                </div>
+                      <Icon className='size-4' />
+                      {tag}
+                    </span>
+                  );
+                })}
               </div>
             </div>
-          ))}
-        </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

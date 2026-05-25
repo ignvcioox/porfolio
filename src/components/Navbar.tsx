@@ -1,7 +1,8 @@
 'use client';
 
-import { Briefcase, Folder, Home } from 'lucide-react';
 import Link from 'next/link';
+
+import { Briefcase, Folder, Home } from 'lucide-react';
 
 import { GitHub, LinkedIn } from '@/src/components/Icons';
 import { Separator } from '@/src/components/ui/separator';
@@ -17,22 +18,19 @@ export const Navbar = () => {
   const { scrollToSection } = useSmoothScroll();
 
   return (
-    <div className='w-fit bottom-6 fixed inset-x-0 mx-auto z-50'>
-      <div className='w-max relative z-50 flex items-center h-16 p-2 px-6 mx-auto rounded-full bg-neutral-900/80 backdrop-blur-lg border-neutral-700 border gap-6'>
+    <div className='fixed inset-x-0 bottom-6 z-50 mx-auto w-fit'>
+      <div className='relative z-50 mx-auto flex h-16 w-max items-center gap-6 rounded-full border border-neutral-700 bg-neutral-900/80 p-2 px-6 backdrop-blur-lg'>
         {links.map(({ label, section, icon: Icon }) => (
-          <div
-            key={section}
-            className='group relative flex aspect-square items-center justify-center rounded-full'
-          >
+          <div key={section} className='group relative flex aspect-square items-center justify-center rounded-full'>
             <Link
               href='/'
               onClick={(event) => scrollToSection(event, section)}
               aria-label={label}
-              className='hover:scale-110 ease-out duration-200 transition-all'
+              className='transition-all duration-200 ease-out hover:scale-110'
             >
               <Icon className='size-4' />
             </Link>
-            <span className='-top-10 left-1/2 group-hover:opacity-100 group-hover:scale-100 absolute z-50 px-3 py-1 text-sm text-black transition-all scale-95 -translate-x-1/2 bg-white rounded-lg shadow opacity-0 pointer-events-none'>
+            <span className='pointer-events-none absolute -top-10 left-1/2 z-50 -translate-x-1/2 scale-95 rounded-lg bg-white px-3 py-1 text-sm text-black opacity-0 shadow transition-all group-hover:scale-100 group-hover:opacity-100'>
               {label}
             </span>
           </div>
@@ -46,7 +44,7 @@ export const Navbar = () => {
             target='_blank'
             rel='noopener noreferrer'
             aria-label='Github'
-            className='hover:scale-110 ease-out duration-200 transition-all'
+            className='transition-all duration-200 ease-out hover:scale-110'
           >
             <GitHub className='size-4' />
           </a>
@@ -58,7 +56,7 @@ export const Navbar = () => {
             target='_blank'
             rel='noopener noreferrer'
             aria-label='LinkedIn'
-            className='hover:scale-110 ease-out duration-200 transition-all'
+            className='transition-all duration-200 ease-out hover:scale-110'
           >
             <LinkedIn className='size-4' />
           </a>

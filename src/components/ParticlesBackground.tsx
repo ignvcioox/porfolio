@@ -33,11 +33,5 @@ export const ParticlesBackground = () => {
 
   if (!init) return null;
 
-  return (
-    <Particles
-      id='tsparticles'
-      options={options}
-      className='absolute inset-0 -z-10'
-    />
-  );
+  return <Particles id='tsparticles' options={options} className='absolute inset-0 -z-10' />;
 };

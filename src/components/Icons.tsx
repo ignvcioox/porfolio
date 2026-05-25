@@ -1,5 +1,61 @@
 import type { SVGProps } from 'react';
 
+export const Redux = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox='0 -6 256 256' preserveAspectRatio='xMidYMid'>
+    <path
+      d='M177.381 169.733c9.447-.978 16.614-9.122 16.288-18.896-.325-9.773-8.47-17.592-18.243-17.592h-.651c-10.1.326-17.918 8.796-17.592 18.895.326 4.887 2.28 9.122 5.212 12.054-11.076 21.828-28.016 37.791-53.426 51.148-17.266 9.122-35.183 12.38-53.1 10.1-14.66-1.955-26.062-8.47-33.23-19.222-10.424-15.963-11.401-33.23-2.605-50.496 6.19-12.38 15.962-21.502 22.152-26.063-1.303-4.235-3.258-11.402-4.235-16.614-47.237 34.207-42.35 80.468-28.016 102.295 10.75 16.29 32.577 26.389 56.684 26.389 6.515 0 13.03-.652 19.546-2.28 41.699-8.145 73.299-32.905 91.216-69.718zm57.336-40.397c-24.759-28.995-61.245-44.958-102.944-44.958h-5.212c-2.932-5.864-9.122-9.774-15.963-9.774h-.652C99.848 74.93 92.03 83.4 92.355 93.5c.326 9.773 8.47 17.592 18.243 17.592h.651c7.167-.326 13.357-4.887 15.963-11.077h5.864c24.759 0 48.214 7.167 69.39 21.176 16.288 10.751 28.016 24.76 34.531 41.7 5.538 13.683 5.212 27.04-.652 38.443-9.121 17.266-24.432 26.714-44.63 26.714-13.031 0-25.41-3.91-31.926-6.842-3.583 3.258-10.099 8.47-14.66 11.729 14.009 6.515 28.343 10.099 42.025 10.099 31.274 0 54.404-17.267 63.2-34.533 9.447-18.896 8.795-51.474-15.637-79.165zM69.225 175.27c.326 9.774 8.47 17.592 18.243 17.592h.652c10.099-.325 17.917-8.796 17.591-18.895-.325-9.774-8.47-17.592-18.243-17.592h-.651c-.652 0-1.63 0-2.28.325-13.357-22.153-18.895-46.26-16.94-72.323 1.302-19.547 7.818-36.488 19.22-50.497 9.447-12.054 27.69-17.918 40.07-18.243 34.531-.652 49.19 42.351 50.168 59.618 4.235.977 11.402 3.258 16.289 4.887C189.434 27.366 156.857 0 125.584 0c-29.32 0-56.359 21.176-67.11 52.451-14.985 41.7-5.212 81.771 13.031 113.372-1.628 2.28-2.606 5.864-2.28 9.448z'
+      fill='#764ABC'
+    />
+  </svg>
+);
+
+export const MongoDB = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} fill='none' viewBox='0 0 120 257'>
+    <path
+      fill='#00ED64'
+      d='M82.323 28.55C71.537 15.795 62.249 2.84 60.35.15c-.2-.2-.5-.2-.7 0-1.897 2.69-11.185 15.645-21.971 28.4C-54.902 146.238 52.26 225.661 52.26 225.661l.9.597c.798 12.258 2.795 29.896 2.795 29.896h7.99s1.998-17.539 2.797-29.896l.899-.697c.1 0 107.263-79.323 14.68-197.01ZM59.95 223.867s-4.793-4.086-6.092-6.179v-.199l5.793-128.151c0-.4.6-.4.6 0l5.792 128.151v.199c-1.299 2.093-6.093 6.179-6.093 6.179Z'
+    />
+  </svg>
+);
+
+export const AmazonWebServices = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} xmlSpace='preserve' viewBox='0 0 304 182'>
+    <path
+      fill='#ffffff'
+      d='m86 66 2 9c0 3 1 5 3 8v2l-1 3-7 4-2 1-3-1-4-5-3-6c-8 9-18 14-29 14-9 0-16-3-20-8-5-4-8-11-8-19s3-15 9-20c6-6 14-8 25-8a79 79 0 0 1 22 3v-7c0-8-2-13-5-16-3-4-8-5-16-5l-11 1a80 80 0 0 0-14 5h-2c-1 0-2-1-2-3v-5l1-3c0-1 1-2 3-2l12-5 16-2c12 0 20 3 26 8 5 6 8 14 8 25v32zM46 82l10-2c4-1 7-4 10-7l3-6 1-9v-4a84 84 0 0 0-19-2c-6 0-11 1-15 4-3 2-4 6-4 11s1 8 3 11c3 2 6 4 11 4zm80 10-4-1-2-3-23-78-1-4 2-2h10l4 1 2 4 17 66 15-66 2-4 4-1h8l4 1 2 4 16 67 17-67 2-4 4-1h9c2 0 3 1 3 2v2l-1 2-24 78-2 4-4 1h-9l-4-1-1-4-16-65-15 64-2 4-4 1h-9zm129 3a66 66 0 0 1-27-6l-3-3-1-2v-5c0-2 1-3 2-3h2l3 1a54 54 0 0 0 23 5c6 0 11-2 14-4 4-2 5-5 5-9l-2-7-10-5-15-5c-7-2-13-6-16-10a24 24 0 0 1 5-34l10-5a44 44 0 0 1 20-2 110 110 0 0 1 12 3l4 2 3 2 1 4v4c0 3-1 4-2 4l-4-2c-6-2-12-3-19-3-6 0-11 0-14 2s-4 5-4 9c0 3 1 5 3 7s5 4 11 6l14 4c7 3 12 6 15 10s5 9 5 14l-3 12-7 8c-3 3-7 5-11 6l-14 2z'
+    />
+    <path d='M274 144A220 220 0 0 1 4 124c-4-3-1-6 2-4a300 300 0 0 0 263 16c5-2 10 4 5 8z' fill='#f90' />
+    <path
+      d='M287 128c-4-5-28-3-38-1-4 0-4-3-1-5 19-13 50-9 53-5 4 5-1 36-18 51-3 2-6 1-5-2 5-10 13-33 9-38z'
+      fill='#f90'
+    />
+  </svg>
+);
+
+export const Docker = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox='0 0 24 24' fill='#008fe2'>
+    <path d='M13.98 11.08h2.12a.19.19 0 0 0 .19-.19V9.01a.19.19 0 0 0-.19-.19h-2.12a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.95-5.43h2.12a.19.19 0 0 0 .18-.19V3.57a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m0 2.71h2.12a.19.19 0 0 0 .18-.18V6.29a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.89c0 .1.09.18.19.18m-2.93 0h2.12a.19.19 0 0 0 .18-.18V6.29a.18.18 0 0 0-.18-.18H8.1a.18.18 0 0 0-.18.18v1.89c0 .1.08.18.18.18m-2.96 0h2.11a.19.19 0 0 0 .19-.18V6.29a.18.18 0 0 0-.19-.18H5.14a.19.19 0 0 0-.19.18v1.89c0 .1.08.18.19.18m5.89 2.72h2.12a.19.19 0 0 0 .18-.19V9.01a.19.19 0 0 0-.18-.19h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m-2.93 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H8.1a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.96 0h2.11a.18.18 0 0 0 .19-.19V9.01a.18.18 0 0 0-.18-.19H5.14a.19.19 0 0 0-.19.19v1.88c0 .1.08.19.19.19m-2.92 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H2.22a.18.18 0 0 0-.19.18v1.9c0 .1.08.18.19.18m21.54-1.19c-.06-.05-.67-.51-1.95-.51-.34 0-.68.03-1.01.09a3.77 3.77 0 0 0-1.72-2.57l-.34-.2-.23.33a4.6 4.6 0 0 0-.6 1.43c-.24.97-.1 1.88.4 2.66a4.7 4.7 0 0 1-1.75.42H.76a.75.75 0 0 0-.76.75 11.38 11.38 0 0 0 .7 4.06 6.03 6.03 0 0 0 2.4 3.12c1.18.73 3.1 1.14 5.28 1.14.98 0 1.96-.08 2.93-.26a12.25 12.25 0 0 0 3.82-1.4 10.5 10.5 0 0 0 2.61-2.13c1.25-1.42 2-3 2.55-4.4h.23c1.37 0 2.21-.55 2.68-1 .3-.3.55-.66.7-1.06l.1-.28Z' />
+  </svg>
+);
+
+export const TailwindCSS = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} fill='none' viewBox='0 0 54 33'>
+    <g clipPath='url(#tailwindcss__a)'>
+      <path
+        fill='#38bdf8'
+        fillRule='evenodd'
+        d='M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z'
+        clipRule='evenodd'
+      />
+    </g>
+    <defs>
+      <clipPath id='tailwindcss__a'>
+        <path fill='#fff' d='M0 0h54v32.4H0z' />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
 export const Prisma = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox='0 0 256 310' preserveAspectRatio='xMidYMid'>
     <path
@@ -116,22 +172,13 @@ export const Java = (props: SVGProps<SVGSVGElement>) => (
       d='M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17'
       fill='#5382A1'
     />
-    <path
-      d='M144 166c17 19-4 36-4 36s42-22 22-49c-18-26-32-38 44-82 0 0-119 29-62 95'
-      fill='#E76F00'
-    />
+    <path d='M144 166c17 19-4 36-4 36s42-22 22-49c-18-26-32-38 44-82 0 0-119 29-62 95' fill='#E76F00' />
     <path
       d='M233 295s10 8-10 15c-39 12-163 15-197 0-12-5 11-13 18-14l12-2c-14-9-89 19-38 28 138 22 251-10 215-27M89 190s-63 15-22 21c17 2 51 2 83-1 26-2 52-7 52-7l-16 9c-64 16-187 8-151-9 30-14 54-13 54-13M202 253c64-33 34-66 13-61l-7 2s2-3 6-5c41-14 73 43-14 66l2-2'
       fill='#5382A1'
     />
-    <path
-      d='M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110'
-      fill='#E76F00'
-    />
-    <path
-      d='M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10'
-      fill='#5382A1'
-    />
+    <path d='M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110' fill='#E76F00' />
+    <path d='M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10' fill='#5382A1' />
   </svg>
 );
 
@@ -199,44 +246,22 @@ export const Figma = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const Nodejs = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    viewBox='0 0 256 292'
-    xmlnsXlink='http://www.w3.org/1999/xlink'
-  >
+  <svg {...props} viewBox='0 0 256 292' xmlnsXlink='http://www.w3.org/1999/xlink'>
     <defs>
-      <linearGradient
-        id='nodejs__a'
-        x1='68.188%'
-        x2='27.823%'
-        y1='17.487%'
-        y2='89.755%'
-      >
+      <linearGradient id='nodejs__a' x1='68.188%' x2='27.823%' y1='17.487%' y2='89.755%'>
         <stop offset='0%' stopColor='#41873F' />
         <stop offset='32.88%' stopColor='#418B3D' />
         <stop offset='63.52%' stopColor='#419637' />
         <stop offset='93.19%' stopColor='#3FA92D' />
         <stop offset='100%' stopColor='#3FAE2A' />
       </linearGradient>
-      <linearGradient
-        id='nodejs__c'
-        x1='43.277%'
-        x2='159.245%'
-        y1='55.169%'
-        y2='-18.306%'
-      >
+      <linearGradient id='nodejs__c' x1='43.277%' x2='159.245%' y1='55.169%' y2='-18.306%'>
         <stop offset='13.76%' stopColor='#41873F' />
         <stop offset='40.32%' stopColor='#54A044' />
         <stop offset='71.36%' stopColor='#66B848' />
         <stop offset='90.81%' stopColor='#6CC04A' />
       </linearGradient>
-      <linearGradient
-        id='nodejs__f'
-        x1='-4.389%'
-        x2='101.499%'
-        y1='49.997%'
-        y2='49.997%'
-      >
+      <linearGradient id='nodejs__f' x1='-4.389%' x2='101.499%' y1='49.997%' y2='49.997%'>
         <stop offset='9.192%' stopColor='#6CC04A' />
         <stop offset='28.64%' stopColor='#66B848' />
         <stop offset='59.68%' stopColor='#54A044' />
@@ -275,11 +300,7 @@ export const Nodejs = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const React = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    viewBox='0 0 569 512'
-    xmlnsXlink='http://www.w3.org/1999/xlink'
-  >
+  <svg {...props} viewBox='0 0 569 512' xmlnsXlink='http://www.w3.org/1999/xlink'>
     <g fill='none' fillRule='evenodd'>
       <g transform='translate(-227, -256)' fill='#58C4DC' fillRule='nonzero'>
         <g transform='translate(227, 256)'>
@@ -365,14 +386,7 @@ export const Angular = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
     <defs>
-      <linearGradient
-        id='angular__c'
-        x1='53.2'
-        x2='245'
-        y1='231.9'
-        y2='140.7'
-        gradientUnits='userSpaceOnUse'
-      >
+      <linearGradient id='angular__c' x1='53.2' x2='245' y1='231.9' y2='140.7' gradientUnits='userSpaceOnUse'>
         <stop stopColor='#E40035' />
         <stop offset='.2' stopColor='#F60A48' />
         <stop offset='.4' stopColor='#F20755' />
@@ -380,14 +394,7 @@ export const Angular = (props: SVGProps<SVGSVGElement>) => (
         <stop offset='.7' stopColor='#9717E7' />
         <stop offset='1' stopColor='#6C00F5' />
       </linearGradient>
-      <linearGradient
-        id='angular__d'
-        x1='44.5'
-        x2='170'
-        y1='30.7'
-        y2='174'
-        gradientUnits='userSpaceOnUse'
-      >
+      <linearGradient id='angular__d' x1='44.5' x2='170' y1='30.7' y2='174' gradientUnits='userSpaceOnUse'>
         <stop stopColor='#FF31D9' />
         <stop offset='1' stopColor='#FF5BE1' stopOpacity='0' />
       </linearGradient>
@@ -399,11 +406,7 @@ export const Angular = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const TanStack = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    {...props}
-    xmlnsXlink='http://www.w3.org/1999/xlink'
-    viewBox='0 0 633 633'
-  >
+  <svg {...props} xmlnsXlink='http://www.w3.org/1999/xlink' viewBox='0 0 633 633'>
     <defs>
       <linearGradient id='tanstack__b' x1='50%' x2='50%' y1='0%' y2='71.65%'>
         <stop offset='0%' stopColor='#6BDAFF' />
@@ -411,13 +414,7 @@ export const TanStack = (props: SVGProps<SVGSVGElement>) => (
         <stop offset='70.627%' stopColor='#FFA770' />
         <stop offset='100%' stopColor='#FF7373' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__d'
-        x1='43.996%'
-        x2='53.441%'
-        y1='8.54%'
-        y2='93.872%'
-      >
+      <linearGradient id='tanstack__d' x1='43.996%' x2='53.441%' y1='8.54%' y2='93.872%'>
         <stop offset='0%' stopColor='#673800' />
         <stop offset='100%' stopColor='#B65E00' />
       </linearGradient>
@@ -445,23 +442,11 @@ export const TanStack = (props: SVGProps<SVGSVGElement>) => (
         <stop offset='0%' stopColor='#2F8A00' />
         <stop offset='100%' stopColor='#90FF57' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__k'
-        x1='92.9%'
-        x2='8.641%'
-        y1='45.768%'
-        y2='54.892%'
-      >
+      <linearGradient id='tanstack__k' x1='92.9%' x2='8.641%' y1='45.768%' y2='54.892%'>
         <stop offset='0%' stopColor='#EE2700' />
         <stop offset='100%' stopColor='#FF008E' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__l'
-        x1='61.109%'
-        x2='43.717%'
-        y1='3.633%'
-        y2='43.072%'
-      >
+      <linearGradient id='tanstack__l' x1='61.109%' x2='43.717%' y1='3.633%' y2='43.072%'>
         <stop offset='0%' stopColor='#FFF400' />
         <stop offset='100%' stopColor='#3C8700' />
       </linearGradient>
@@ -469,83 +454,35 @@ export const TanStack = (props: SVGProps<SVGSVGElement>) => (
         <stop offset='0%' stopColor='#FFDF00' />
         <stop offset='100%' stopColor='#FF9D00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__n'
-        x1='127.279%'
-        x2='0%'
-        y1='49.778%'
-        y2='50.222%'
-      >
+      <linearGradient id='tanstack__n' x1='127.279%' x2='0%' y1='49.778%' y2='50.222%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__o'
-        x1='127.279%'
-        x2='0%'
-        y1='47.531%'
-        y2='52.469%'
-      >
+      <linearGradient id='tanstack__o' x1='127.279%' x2='0%' y1='47.531%' y2='52.469%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__p'
-        x1='127.279%'
-        x2='0%'
-        y1='46.195%'
-        y2='53.805%'
-      >
+      <linearGradient id='tanstack__p' x1='127.279%' x2='0%' y1='46.195%' y2='53.805%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__q'
-        x1='127.279%'
-        x2='0%'
-        y1='35.33%'
-        y2='64.67%'
-      >
+      <linearGradient id='tanstack__q' x1='127.279%' x2='0%' y1='35.33%' y2='64.67%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__r'
-        x1='127.279%'
-        x2='0%'
-        y1='4.875%'
-        y2='95.125%'
-      >
+      <linearGradient id='tanstack__r' x1='127.279%' x2='0%' y1='4.875%' y2='95.125%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__s'
-        x1='78.334%'
-        x2='31.668%'
-        y1='0%'
-        y2='100%'
-      >
+      <linearGradient id='tanstack__s' x1='78.334%' x2='31.668%' y1='0%' y2='100%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__t'
-        x1='57.913%'
-        x2='44.88%'
-        y1='0%'
-        y2='100%'
-      >
+      <linearGradient id='tanstack__t' x1='57.913%' x2='44.88%' y1='0%' y2='100%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
-      <linearGradient
-        id='tanstack__u'
-        x1='50.495%'
-        x2='49.68%'
-        y1='0%'
-        y2='100%'
-      >
+      <linearGradient id='tanstack__u' x1='50.495%' x2='49.68%' y1='0%' y2='100%'>
         <stop offset='0%' stopColor='#FFA400' />
         <stop offset='100%' stopColor='#FF5E00' />
       </linearGradient>
@@ -694,14 +631,7 @@ export const TanStack = (props: SVGProps<SVGSVGElement>) => (
           d='m402.861 391.51.471-4.088M382.21 388.752l.472-4.087M361.546 385.404l.485-3.845M337.59 371.883l2.56-2.498M324.276 359.567l2.56-2.497'
         />
       </g>
-      <ellipse
-        cx='308.5'
-        cy='720.5'
-        fill='url(#tanstack__l)'
-        mask='url(#tanstack__c)'
-        rx='266'
-        ry='316.5'
-      />
+      <ellipse cx='308.5' cy='720.5' fill='url(#tanstack__l)' mask='url(#tanstack__c)' rx='266' ry='316.5' />
       <ellipse
         cx='308.5'
         cy='720.5'
@@ -715,14 +645,7 @@ export const TanStack = (props: SVGProps<SVGSVGElement>) => (
       <g mask='url(#tanstack__c)'>
         <g transform='translate(389 -32)'>
           <circle cx='168.5' cy='113.5' r='113.5' fill='url(#tanstack__m)' />
-          <circle
-            cx='168.5'
-            cy='113.5'
-            r='106'
-            stroke='#FFC900'
-            strokeOpacity='.529'
-            strokeWidth='15'
-          />
+          <circle cx='168.5' cy='113.5' r='106' stroke='#FFC900' strokeOpacity='.529' strokeWidth='15' />
           <path
             stroke='url(#tanstack__n)'
             strokeLinecap='round'
@@ -855,13 +778,7 @@ export const Nextjs = (props: SVGProps<SVGSVGElement>) => (
         d='M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z'
         fill='url(#nextjs_icon_dark__:r8:paint0_linear_408_134)'
       />
-      <rect
-        fill='url(#nextjs_icon_dark__:r8:paint1_linear_408_134)'
-        height='72'
-        width='12'
-        x='115'
-        y='54'
-      />
+      <rect fill='url(#nextjs_icon_dark__:r8:paint1_linear_408_134)' height='72' width='12' x='115' y='54' />
     </g>
     <defs>
       <linearGradient

@@ -39,7 +39,14 @@ export function Experience() {
           >
             <div className='flex flex-col items-center'>
               <div className='h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950 shadow-lg transition-transform duration-300 hover:scale-110'>
-                <Image src={exp.image} alt={exp.company} width={64} height={64} className='object-cover' />
+                <Image
+                  src={exp.image}
+                  alt={exp.company}
+                  width={64}
+                  height={64}
+                  className='object-cover'
+                  loading='lazy'
+                />
               </div>
               <div className='my-4 w-0.5 flex-1 bg-linear-to-b from-white/20 to-transparent' />
             </div>

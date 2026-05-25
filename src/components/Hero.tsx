@@ -1,14 +1,24 @@
 'use client';
 
-import { ArrowRight, Mail } from 'lucide-react';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { ArrowRight, Mail } from 'lucide-react';
+
 import { GitHub, LinkedIn } from '@/src/components/Icons';
-import { ParticlesBackground } from '@/src/components/ParticlesBackground';
-import { Typewriter } from '@/src/components/Typewriter';
 import { Button } from '@/src/components/ui/button';
 import { useSmoothScroll } from '@/src/hooks/useSmoothScroll';
+
+const ParticlesBackground = dynamic(
+  () => import('@/src/components/ParticlesBackground').then((mod) => mod.ParticlesBackground),
+  { ssr: false },
+);
+
+const Typewriter = dynamic(() => import('@/src/components/Typewriter').then((mod) => mod.Typewriter), {
+  ssr: false,
+  loading: () => <div className='h-8 text-2xl font-bold text-emerald-500 md:text-3xl'>Software Developer</div>,
+});
 
 const links = [
   { href: 'https://github.com/ignvcioox', label: 'Github', icon: GitHub },
@@ -83,7 +93,8 @@ export const Hero = () => {
             <Image
               src='/avatar.webp'
               alt='Benjamin - Software Developer'
-              fill
+              width={320}
+              height={320}
               sizes='(min-width: 1024px) 320px, 0px'
               className='object-cover object-center'
               priority

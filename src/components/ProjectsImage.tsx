@@ -30,7 +30,6 @@ export const ProjectsImage = ({ images, title }: Props) => {
         src={images[currentIndex]}
         alt={`Captura ${currentIndex + 1} de ${title}`}
         fill
-        priority
         sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
         className='transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover/image:translate-y-1 group-hover/image:scale-105 group-hover/image:brightness-90'
       />
